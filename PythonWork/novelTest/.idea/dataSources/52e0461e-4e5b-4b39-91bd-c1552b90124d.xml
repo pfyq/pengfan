@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="book">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="emptybag"/>
+    <schema id="4" parent="1" name="gx"/>
+    <schema id="5" parent="1" name="hdb"/>
+    <schema id="6" parent="1" name="hs"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="khxt"/>
+    <schema id="9" parent="1" name="mall"/>
+    <schema id="10" parent="1" name="mj"/>
+    <schema id="11" parent="1" name="motorway"/>
+    <schema id="12" parent="1" name="mysql"/>
+    <schema id="13" parent="1" name="shirodemo"/>
+    <schema id="14" parent="1" name="sm"/>
+    <schema id="15" parent="1" name="smark"/>
+    <schema id="16" parent="1" name="spring-boot-clouddisk"/>
+    <schema id="17" parent="1" name="temp"/>
+    <schema id="18" parent="1" name="xmall"/>
+    <table id="19" parent="2" name="fx_goods"/>
+    <table id="20" parent="2" name="sm_user"/>
+    <column id="21" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="19" name="url">
+      <Position>2</Position>
+      <Comment>活动链接</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="19" name="poster_url">
+      <Position>3</Position>
+      <Comment>海报链接</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="24" parent="19" name="title">
+      <Position>4</Position>
+      <Comment>活动标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="25" parent="19" name="remark">
+      <Position>5</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="26" parent="19" name="ass_title">
+      <Position>6</Position>
+      <Comment>活动副标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="27" parent="19" name="type_id">
+      <Position>7</Position>
+      <Comment>类型id</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="28" parent="19" name="end_date">
+      <Position>8</Position>
+      <Comment>截止时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="29" parent="19" name="head_url">
+      <Position>9</Position>
+      <Comment>活动头图</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="19" name="content">
+      <Position>10</Position>
+      <Comment>详情</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="31" parent="19" name="price">
+      <Position>11</Position>
+      <Comment>原价</Comment>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="32" parent="19" name="special_price">
+      <Position>12</Position>
+      <Comment>特价</Comment>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="33" parent="19" name="create_date">
+      <Position>13</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="34" parent="19" name="limitation">
+      <Position>14</Position>
+      <Comment>限量</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="35" parent="19" name="limitation_type">
+      <Position>15</Position>
+      <Comment>on 表示需要  off 表示不需要</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="36" parent="19" name="sales_type">
+      <Position>16</Position>
+      <Comment>on 表示需要  off 表示不需要</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="37" parent="19" name="sales_but1">
+      <Position>17</Position>
+      <Comment>1:显示  2:隐藏</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="38" parent="19" name="sales_but2">
+      <Position>18</Position>
+      <Comment>1 未购买可分销  2 购买过可分销</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="39" parent="19" name="sales_award">
+      <Position>19</Position>
+      <Comment>1 比例佣金奖励  2 固定佣金奖励</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="40" parent="19" name="sales_commission1">
+      <Position>20</Position>
+      <Comment>分销佣金1</Comment>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="41" parent="19" name="sales_commission2">
+      <Position>21</Position>
+      <Comment>分销佣金2</Comment>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="42" parent="19" name="placard_id">
+      <Position>22</Position>
+      <Comment>分销海报路径</Comment>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <column id="43" parent="19" name="sales_award_info">
+      <Position>23</Position>
+      <Comment>分销奖励r入账说明</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="44" parent="19" name="share_title">
+      <Position>24</Position>
+      <Comment>分享标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="45" parent="19" name="share_info">
+      <Position>25</Position>
+      <Comment>分享描述</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="46" parent="19" name="share_url">
+      <Position>26</Position>
+      <Comment>分享图片路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="47" parent="19" name="receiving_type">
+      <Position>27</Position>
+      <Comment>1 不用填写  2  付费前填写  3   付费后填写</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="48" parent="19" name="but_left_type">
+      <Position>28</Position>
+      <Comment>1 查看订单  2 添加微信群或个人号或其他公众号  3 文字说明  4  直接跳转</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="49" parent="19" name="left_word">
+      <Position>29</Position>
+      <Comment>左侧按钮文字</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="50" parent="19" name="left_des">
+      <Position>30</Position>
+      <Comment>左侧引导描述</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="51" parent="19" name="left_code">
+      <Position>31</Position>
+      <Comment>左侧二维码路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="52" parent="19" name="left_word_info">
+      <Position>32</Position>
+      <Comment>左侧文字说明</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="53" parent="19" name="left_url">
+      <Position>33</Position>
+      <Comment>左侧跳转路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="54" parent="19" name="but_right_type">
+      <Position>34</Position>
+      <Comment>1 添加微信群或个人号或其他公众号  2  文字说明  3  直接跳转</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="55" parent="19" name="right_word">
+      <Position>35</Position>
+      <Comment>右侧按钮文字</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="56" parent="19" name="right_des">
+      <Position>36</Position>
+      <Comment>右侧描述</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="57" parent="19" name="right_code">
+      <Position>37</Position>
+      <Comment>右侧二维码路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="58" parent="19" name="right_word_info">
+      <Position>38</Position>
+      <Comment>右侧文字说明</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="59" parent="19" name="right_url">
+      <Position>39</Position>
+      <Comment>右侧跳转路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="60" parent="19" name="pay_logo">
+      <Position>40</Position>
+      <Comment>关注信息logo</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="61" parent="19" name="pay_title">
+      <Position>41</Position>
+      <Comment>关注标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="62" parent="19" name="pay_title2">
+      <Position>42</Position>
+      <Comment>关注副标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="63" parent="19" name="serv_wechat">
+      <Position>43</Position>
+      <Comment>客服微信</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="64" parent="19" name="pay_code">
+      <Position>44</Position>
+      <Comment>关注二维码</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="65" parent="19" name="sales_type2">
+      <Position>45</Position>
+      <Comment>是否启动二级分销   on 表示需要  off 表示不需要</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="66" parent="19" name="user_id">
+      <Position>46</Position>
+      <Comment>用户id</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="67" parent="19" name="look_num">
+      <Position>47</Position>
+      <Comment>浏览数</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="19" name="forward_num">
+      <Position>48</Position>
+      <Comment>转发分享邀请数</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="69" parent="19" name="buy_num">
+      <Position>49</Position>
+      <Comment>购买数</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="70" parent="19" name="state">
+      <Position>50</Position>
+      <Comment>1 代表已删除</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="71" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="72" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="73" parent="20" name="name">
+      <Position>2</Position>
+      <Comment>账号</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="74" parent="20" name="password">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="75" parent="20" name="real_name">
+      <Position>4</Position>
+      <Comment>真实姓名</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="76" parent="20" name="phone">
+      <Position>5</Position>
+      <Comment>手机号码</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="77" parent="20" name="code">
+      <Position>6</Position>
+      <Comment>用户编号</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="78" parent="20" name="create_date">
+      <Position>7</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="79" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

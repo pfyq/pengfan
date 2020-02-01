@@ -1,4 +1,17 @@
 #建立git仓库
 git -> Git Bash Here -> git init -->git status-->git add --all-->git commit -m "第一次提交"-->去github上创建自己的Repository
--->git remote add origin https://github.com/pfyq/pengfan.git(将本地的仓库关联到github上)-->git pull --rebase origin master(代码合并)
+-->git remote add origin https://github.com/pfyq/pengfan.git(将本地的仓库关联到github上)-->git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）-->git pull --rebase origin master(代码合并)
 ##git add + 需要添加的文件名 或者git add --all 将所有的文件全部添加
+
+
+
+git clone https://github.com/pfyq/pengfan.git(将github上的项目拉取下来)
+
+
+git add . 
+
+git add xx命令可以将xx文件添加到暂存区，如果有很多改动可以通过 git add -A .来一次添加所有改变的文件。注意 -A 选项后面还有一个句点。 git add -A表示添加所有内容， git add . 表示添加新文件和编辑过的文件不包括删除的文件; git add -u 表示添加编辑或者删除的文件，不包括新添加的文件
+
+git commit -m "提交注释"
+
+git push origin  分支名称，一般使用：git push origin master
