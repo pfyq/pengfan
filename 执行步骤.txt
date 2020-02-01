@@ -1,0 +1,4 @@
+#建立git仓库
+git -> Git Bash Here -> git init -->git status-->git add --all-->git commit -m "第一次提交"-->去github上创建自己的Repository
+-->git remote add origin https://github.com/pfyq/pengfan.git(将本地的仓库关联到github上)-->git pull --rebase origin master(代码合并)
+##git add + 需要添加的文件名 或者git add --all 将所有的文件全部添加

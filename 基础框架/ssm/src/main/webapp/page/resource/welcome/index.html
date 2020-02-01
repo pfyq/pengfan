@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>科海学堂</title>
+    
+    <link rel="stylesheet" id="easyuiTheme" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/demo/demo.css">
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+
+    <script type="text/javascript" src="../js/AllAjax.js"></script>
+<style>
+        #top_cpic {
+          overflow: hidden;
+          height: 35px;
+          background:#E0ECFF;
+        }
+
+        #top_cpic #top_div {
+          margin-left: 30px;
+          height: 30px;
+          line-height: 30px;
+        }
+
+        #top_cpic #top_a {
+           position: absolute;
+           margin-right: 20px;
+           top: 0px;
+           right: 10px;
+        }
+</style>
+</head>
+<body class="easyui-layout">
+    <div id='loadingDiv' style="position: absolute; z-index: 1000; top: 0px; left: 0px;
+                    width: 100%; height: 100%; background: white; text-align: center;">
+                <h1 style="top: 48%; position: relative;">
+                        <font color="#15428B">努力加载中···</font>
+                </h1>
+    </div>
+
+	<script type="text/JavaScript">
+		function closeLoading() {
+			$("#loadingDiv").fadeOut("normal", function() {
+				$(this).remove();
+			});
+		}
+		var no;
+		$.parser.onComplete = function() {
+			if (no)
+				clearTimeout(no);
+			no = setTimeout(closeLoading, 1000);
+		};
+	</script>
+
+	<div id="top_cpic"  data-options="region:'north',title:'',split:true">
+        <div id="top_div">
+            <span id="span_one" style="font-size: 18px">科海学堂</span>&nbsp;&nbsp;
+        </div>
+        <div id="top_a">
+           <table>
+              <tr>
+                  <td><span>磁盘容量&nbsp;</span><span id="diskSpace"></span></td>
+                <td><a href="#" class="easyui-menubutton"
+                data-options="menu:'#mm1',iconCls:'icon-edit'">设置</a></td>
+              </tr>
+            </table>
+        </div>
+    </div>    
+
+   
+    <div
+        data-options="region:'west',title:'系统菜单',split:true,hideCollapsedContent:false"
+        style="width: 300px;">
+       <div  class="easyui-accordion" fit = true style="width:300px;height:200px;">
+          <div title="板块管理" style="height:50px">
+           <ul id="tree_plate">
+
+           </ul>
+          </div>
+          <div title="视频管理" style="height:50px">
+           <ul id="tree_video">
+
+           </ul>
+          </div>
+           <!--<div title="题库管理" style="height:50px">-->
+           <!--<ul id="tree_question">-->
+             <!---->
+           <!--</ul>-->
+          <!--</div>-->
+          <!--<div title="试卷管理" style="height:50px">-->
+           <!--<ul id="tree_paper">-->
+             <!---->
+           <!--</ul>-->
+          <!--</div>-->
+          <div title="文章管理" style="height:50px">
+           <ul id="tree_article">
+
+           </ul>
+          </div>
+          <!--<div title="咨询管理" style="height:50px">-->
+           <!--<ul id="tree_information">-->
+             <!---->
+           <!--</ul>-->
+          <!--</div>-->
+           <div title="会员管理" style="height:50px">
+           <ul id="tree_member">
+
+           </ul>
+           </div>
+          <div title="管理员管理" style="height:50px">
+           <ul id="tree_user">
+             
+           </ul>
+          </div>
+       </div>
+    </div>
+    <div region="center" id="mainPanle"
+        style="background: #eee; overflow: hidden;"
+        data-options="region:'center'">
+        <!--这是数据网格 -->
+        <div id="tb_tab" class="easyui-tabs" fit="true" border="1">
+            <div id="head_definit" title="首页" style="padding: 1px;">
+                <!-- <img id="img" src="imge/welcome.jpg" border="0" width="100%"
+                    height="100%" usemap="#map" /> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 控制面板 -->
+    <div id="mm1" style="width: 150px;">
+        <div id="logout" data-options="iconCls:'icon-remove'">注销</div>
+        <!--<div data-options="iconCls:'icon-More'">-->
+            <!--<span>皮肤</span>-->
+            <!--<div style="width: 150px;">-->
+                <!--<div onclick="javascript:changeTheme('default')">默认</div>-->
+                <!--<div onclick="javascript:changeTheme('gray')">灰色</div>-->
+                <!--<div onclick="javascript:changeTheme('sunny')">阳光</div>-->
+                <!--<div onclick="changeTheme('black');">black</div> -->
+                <!--<div onclick="changeTheme('bootstrap');">bootstrap</div>-->
+                <!--<div onclick="changeTheme('metro');">metro</div>    -->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    
+    <!-- 右击菜单 -->
+    <div id="mm" class="easyui-menu" style="width: 120px;"
+        data-options="onClick:menuHandlerHold">
+        <!-- 这是一个点击事件,得有此事件存在 -->
+        <div name="1">关闭当前</div>
+        <div name="2">关闭其他</div>
+        <div name="3">关闭所有</div>
+    </div>
+    <input name="tree_id" value="" type="hidden"/>
+    <script>
+
+        $(function(){
+            /*easyui-linkbutton的点击事件    注销*/
+            $('#logout').bind('click', function(){
+                location.href="logout";
+            });
+
+            lookDiskSpace();
+        })
+
+       function lookDiskSpace(){
+           $.post("/diskSpace/freeDiskSpace",{},function(data){
+               var str = "(&nbsp;总:"+data.total+",用:"+data.used+",使用率:"+data.free+"&nbsp;)";
+               $("#diskSpace").html(str);
+           });
+       }
+
+
+      function setParentParam(id){
+          $("input[name = 'tree_id']").val(id);
+      }
+
+      function serLoadUrl(param){
+          window.location.href = param;
+      }
+
+      function getParentParam(){
+          return $("input[name = 'tree_id']").val();
+      }
+      
+    </script>
+</body>
+<script type="text/javascript" src="../js/tab.js"></script>
+<script type="text/javascript" src="../js/theme.js"></script>
+</html>

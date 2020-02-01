@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Trees>
+   <tree id = "tree_user"><!-- 管理员管理 -->
+   <menu id = "user"  text = "用户信息"/>
+   <menu id = "modify"  text = "修改密码"/>
+   </tree>
+</Trees>

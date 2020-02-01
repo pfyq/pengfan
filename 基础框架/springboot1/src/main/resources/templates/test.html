@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/datatables/1.10.0/jquery.dataTables.min.js"></script>
+    <!--<script type="text/javascript" src="/datatables/dataTables.colReorder.min.js"></script>-->
+</head>
+<style>
+    .table>tbody>tr>td{
+        text-align:center;
+    }
+</style>
+<body>
+<table class="table" width="100%">
+    <thead>
+    <tr class="text-c">
+        <th width="40">ID</th>
+        <th width="200">权限名称</th>
+        <th>字段名</th>
+        <th width="70">操作</th>
+    </tr>
+    </thead>
+</table>
+<script>
+    /*datatables配置*/
+    $(document).ready(function () {
+        var dt = [
+            {
+                "id":       "Tiger Nixon",
+                "name":   "System Architect",
+                "permission":     "$3,120",
+            },
+            {
+                "id":       "Garrett Winters",
+                "name":   "Director",
+                "permission":     "$5,300",
+            }
+        ];
+
+        $('.table').DataTable({
+            "processing": true,//加载显示提示
+             data:dt,
+            "columns": [
+                { "data": "id"},
+                { "data": "name"},
+                { "data": "permission"},
+                {
+                    "data": null,
+                    render: function (data, type, row, meta) {
+                        return "空";
+                    }
+                }
+            ],
+            language: {
+                url: '/datatables/Chinese.json'
+            },
+            colReorder: true
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>coach1.html</title>
+<script src="../js/base-loading.js"></script>
+<!-- 添加遮蔽层 -->
+
+<link rel="stylesheet" id="easyuiTheme" type="text/css"
+	href="../easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../easyui/demo/demo.css">
+<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+<script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript"
+	src="../easyui/locale/easyui-lang-zh_CN.js"></script>
+
+    <script type="text/javascript" src="../js/AllAjax.js"></script>
+</head>
+
+<body>
+	<div class="easyui-layout"
+		style="width:500px;height:300px;margin:0 auto;">
+		<div data-options="region:'center',split:true" title=" "
+			style="width:100px;">
+			<!--修改密码 -->
+			<form id="fmUser" method="post" novalidate
+				style="margin:0;padding:20px 50px">
+				<div style="margin-bottom:10px;display:none">
+                   <input id="code" value="id" name="id"
+                            class="easyui-textbox" required="true" label="员工ID:"
+                            style="width:100%"></td>
+                </div>
+                <div style="margin-bottom:10px;">
+                   <input id="name" name="userName" value="请输入账号"
+                            class="easyui-textbox" required="true" label="员工账号:"
+                            readonly="readonly" style="width:100%">
+                </div>
+                <div style="margin-bottom:10px;">
+                   <input id="password" name="password"
+                            class="easyui-passwordbox" prompt="Password" label="原密码:"
+                            style="width:100%">
+                </div>
+                 <div style="margin-bottom:10px;">
+                   <input id="newPassword" name="newPassword"
+                            class="easyui-passwordbox" prompt="Password" required="true"
+                            label="新密码:" style="width:100%">
+                </div>
+                <div style="margin-bottom:10px;">
+                   <input id="repassword" name="repassword"
+                            class="easyui-passwordbox" prompt="Password" required="true"
+                            label="再次输入:" style="width:100%">
+                </div>
+                <div style="margin-bottom:10px;text-align: right;">
+                  <a id="saveUser" href="javascript:void(0)"
+                            class="easyui-linkbutton c6" iconCls="icon-ok" onclick="saveTo()"
+                            style="width:90px">保存</a> 
+                </div>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+    $(function(){
+       $.post("../modify/member",{},function(data){
+             $("#code").textbox('setValue',data.id);
+             $("#name").textbox('setValue',data.userName);
+       });
+    });
+    function saveTo(){
+       var param = decodeURIComponent($("#fmUser").serialize(), true);
+       var newPassword=$("#fmUser").find("input[name='newPassword']").val();
+       var repassword=$("#fmUser").find("input[name='repassword']").val();
+       $.post("../modify/validate", {
+          "name" : $("#fmUser").find("input[name='userName']").val(),
+          "password" : $("#fmUser").find("input[name='password']").val(),
+          "id"   : $("#fmUser").find("input[name='id']").val()
+       }, function(data) {
+          if (data) {
+              $("#fmUser").find('#password').next('span').find('input').focus();
+              $.messager.show({ // show error message
+                  title : '提示信息',
+                  msg : "原密码不正确!"
+              });
+          }else{
+              if(newPassword.length==0){
+                  $.messager.show({ // show error message
+                      title : '提示信息',
+                      msg : "请填入新密码!"
+                  });
+                  return;
+              }
+            
+              if(repassword.length==0){
+                  $.messager.show({ // show error message
+                      title : '提示信息',
+                      msg : "请再次输入新密码!"
+                  });
+                  return;
+              }
+            
+              if(newPassword.length>0&&newPassword==repassword){
+                  subUser(param);
+              }else{
+                  $.messager.show({ // show error message
+                      title : '提示信息',
+                      msg : "两次填入密码不一样!"
+                  });
+                  return;
+              }
+            
+          }
+      });
+    }
+    
+    function subUser(param){
+        $('#fmUser').form('submit', {
+          url : "../modify/upd",
+          data : param,
+          onSubmit : function() {
+              return $(this).form('validate');//true
+          },
+          success : function(result) {
+              $.messager.show({
+                  title : '信息提示',
+                  msg : result,
+                  timeout : 5000,
+                  showType : 'slide'
+              });
+          }
+      });
+    }
+</script>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>小程序管理</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+<!-- <script src="../../js/baszle-loading.js"></script> -->
+
+<!--<link rel="shortcut icon" type="image/x-icon" href="//a2cdn2.8686c.com/images/v2/favicon.gif">&lt;!&ndash;图表  公网&ndash;&gt;-->
+
+<link href="/platform/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="/platform/easyui.css" />
+<link href="/platform/login.css" rel="stylesheet" type="text/css">
+<!-- 添加的css --> 
+<link href="/css/my_dialog.css" type="text/css" rel="stylesheet" />
+    
+    
+<script id="jsBase" type="text/javascript" src="/platform/base.js"></script>
+<script type="text/javascript" src="/platform/jquery-1.7.1.min.js"></script>
+<script src="/platform/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/platform/jquery.cookie.js"></script>
+<script type="text/javascript" src="/platform/md5.js"></script>
+<script type="text/javascript" src="/platform/validate.js"></script>
+<script type="text/javascript" src="/platform/layer.js"></script>
+    
+<style type="text/css">
+#load{
+   position:fixed; 
+   top: 0px; 
+   right:0px; 
+   bottom:0px;
+   left: 0px;
+   filter: alpha(opacity=60);
+   background-color: #777;
+   z-index: 1002; 
+   display:none;
+   opacity:0.5; -moz-opacity:0.5;padding-top:100px;color: #000000}
+</style>
+    
+</head>
+
+<body onkeydown="javascript:if(event.keyCode==13)loginSubmit();">
+    <input id="idInput" type="hidden" value="company" />
+    <div class="container clearfix">
+        <div class="secL">
+            <h2 align="center">小程序管理</h2>
+            <!--<h2>综合查询统计系统</h2>-->
+            
+        </div>
+        <div class="secR">
+            <div class="box-bg"></div>
+            <form action="/platform/login.do" method="post" name="frmLogin" id="loginForm">
+                <div class="form">
+                    <h1>登录平台</h1>
+                    <p>
+                        <span class="f9c442"> 输入账户登录 </span>
+                    </p>
+                    <div class="item clearfix">
+                        <label for="userNameIpt"></label> 
+                        <input type="text" tabindex="1" id="userNameIpt" name="name"
+                            notnull="true" info="用户名" placeholder="输入用户名" value="输入用户名"/>
+                    </div>
+                    <div class="item itempass clearfix">
+                        <label for="password"></label> 
+                        <input type="password" tabindex="2" id="password" name="password" notnull="true" info="密码"
+                            autocomplete="off" placeholder="请输入密码" value="请输入密码" />
+                    </div>
+                    <div class="item validatepic clearfix">
+
+                    </div>
+                    <div class="item itemRadio clearfix" >
+                        
+                        <input  type="checkbox" style="float: left;width:13px;height: 25px" id="radioPass"  checked="checked" name="rememberPwd" value="rememberPwd">&nbsp;记住密码</input>
+                        
+                        
+                        
+                        <!-- <a href="javascript:;" style="float: right;"><!-- 忘记密码? --><!--</a> -->
+                    </div>
+
+                    <div class="item"><!-- onclick="loginSubmit();" -->
+                       <button type="button" tabindex="5"  id="btnSubmit" onkeydown="javascript:if(event.keyCode==13){event.returnValue = false}">登&nbsp;&nbsp;录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div style="position: relative; top:250px;left:150px;text-align: center;float:left;padding-left: 200px;">
+                <a target="_blank" id="beianpath" href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;Cursor:default;"><p id="beianhaoma" style="font-size:13px;color:transparent;"></p></a>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id ="cpws">
+            <div style="padding:10px 10px 10px 30px">
+                <table cellpadding="5">
+                    <tr>
+                        <td colspan='2'>
+                         
+                         
+                           <font color='red'>由于原密码比较简单，请重新设置新密码</font>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'><font color='red'>新密码必须包含数字，字母及特殊符号,并且在8位以上!</font></td>
+                    </tr>
+                    <tr>
+                        <td style="width:80px;height:35px">原密码:<font color='red'>*</font></td>
+                        <td>
+                           <input style="width:150px;" type="password" id="password2" name="password2" onblur="validatePassword(this);" data-options="required:true,missingMessage:'新密码必填'"/>
+                           <span id="password2Red" style="color: red;display: none;">密码错误</span>
+                           <span id="password2Green" style="color: red;display: none;padding-left: 30px;background: url('images/correct.png') no-repeat;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:80px;height:35px">新密码:<font color='red'>*</font></td>
+                        <td>
+                          <input style="width:150px;" type="password" id="newPwd" onkeyup="validateOldAndNewPass(this,'newPwd');" name="newPwd" data-options="required:true,missingMessage:'新密码必填'"/>
+                          <span id="newPwdRed" style="color: red;display: none;">密码不符合规则</span>
+                          <span id="newPwdGreen" style="color: green;display: none;padding-left: 30px;background: url('images/correct.png') no-repeat;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:80px;height:35px">确认密码:<font color='red'>*</font></td>
+                        <td>
+                         <input style="width:150px;" type="password" id="valiPwd" onkeyup="validateOldAndNewPass(this,'valiPwd');" name="valiPwd" data-options="required:true,missingMessage:'确认必填'"/>
+                         <span id="valiPwdRed" style="color: red;display: none;"></span>
+                         <span id="valiPwdGreen" style="color: green;display: none;padding-left: 30px;background: url('images/correct.png') no-repeat;"></span>
+                        </td>
+                    </tr>
+                </table>
+                 <div style="text-align:center;padding:5px">
+                   <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitFormPwd()">保存</a>
+                   <a href="javascript:void(0)" class="easyui-linkbutton" onclick="closeFormPwd()">关闭</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="load" align="center"><img src="/imge/loading.gif" width="28" height="28" align="absmiddle"/>加载中...</div>
+    
+    <!-- 修改密码弹窗结束-->
+    <script type="text/javascript" src="/platform/platform_cut.js"></script>
+    
+    <!-- 添加script -->
+    <script src="/platform/jquery-1.12.3.min.js"></script>
+    <script src="/platform/jq_mydialog.js"></script>
+    <script type="text/javascript">
+    $(function(){
+         //使当前页面的url等于顶部的url
+         if(top.location != self.location){  
+            top.location = self.location;  
+         }  
+         visite();
+    });
+    //隐藏遮蔽层
+    $(document).ready(function() { $('#load').hide();}); 
+     
+      //获取cookie中保存的用户值
+     function visite(){
+        $.post("visite",{},function(data){
+             $("#password").val(data.password);
+             $("#userNameIpt").val(data.name);
+         });
+     }
+     //解码
+     function getQueryString(key){
+        var reg = new RegExp("(^|&)"+key+"=([^&]*)(&|$)");
+        var result = window.location.search.substr(1).match(reg);
+        return result?decodeURIComponent(result[2]):null;
+     }
+    //给密码框添加个空格键登录
+    $("#password").keypress(function(e){
+        if(e.keyCode==13){
+            login();
+        }
+    });
+    //登录按钮的点击事件
+    $("#btnSubmit").click(function() {
+        login();
+    });
+    //登录
+    function login(){
+        $('#load').fadeIn();//显示加载图标
+        $.post("validate", $("#loginForm").serialize(), function(data) {
+            //alert(data);
+            var reg = new RegExp("^[0-9]*$");
+            if(reg.test(data)){
+                location.href = "/login/go?r="+Math.random();
+            }else if (data.indexOf("Exception") != -1) {
+                location.href = "error";
+            } else {
+                $('#load').fadeOut();
+                falseAlert(data);
+            }
+            
+        });
+    }
+
+    //登录错误弹框
+    function falseAlert(data) {
+        //alert(data);
+        $.myalert({
+            content : data,
+            confirm_btn_click : function(e) { //确认按钮点击事件
+                $.myalert("getDialog").mydialog("hide");
+            }
+        });
+    };
+    </script>
+
+</body>
+</html>

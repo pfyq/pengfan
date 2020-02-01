@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 一个简单的网页</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<h1>我的第一个 Bootstrap 页面</h1>-->
+    <!--<p>重置浏览器窗口大小查看效果！</p>-->
+<!--</div>-->
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">网站名</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页</a></li>
+                <li><a href="#">页面 2</a></li>
+                <li><a href="#">页面 3</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fiuled">
+    <div class="row">
+        <div class="col-xs-6 col-sm-2">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne">
+                                第 1 部分
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul id='one'>
+                                <li id='prent1'>
+                                    <a class='' data-toggle='collapse' data-percent='prent1' href='#prent1_child'><span class="glyphicon glyphicon-home"style="margin-right: 10px;"></span>这是一个神奇的地方</a>
+                                    <ul class='collapse' id='prent1_child'>
+                                        <li data-toggle='collapse' data-percent='prent2_1' href='#prent2_1_child'>
+                                            <span class="glyphicon glyphicon-member " style="margin-right: 10px;margin-left: 10px;"></span> 一号
+                                        </li>
+                                        <ul class='collapse' id='prent2_1_child'>
+                                            <li  data-toggle='collapse' data-percent='prent2_1_child' href='#prent2_1_1_child'><span class="glyphicon glyphicon-member "></span>一号-->1</li>
+                                            <ul class='collapse' id='prent2_1_1_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>一号-->1_1_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>一号-->1_1_2</li>
+                                            </ul>
+                                            <li  data-toggle='collapse' data-percent='prent2_1_child' href='#prent2_1_2_child'><span class="glyphicon glyphicon-member "></span>一号-->2</li>
+                                            <ul class='collapse' id='prent2_1_2_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>一号-->1_2_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>一号-->1_2_2</li>
+                                            </ul>
+
+                                            <li data-toggle='collapse' data-percent='prent2_1_child' href='#prent2_1_3_child'><span class="glyphicon glyphicon-member "></span>一号-->3</li>
+                                            <ul class='collapse' id='prent2_1_3_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>一号-->1_3_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>一号-->1_3_2</li>
+                                            </ul>
+                                        </ul>
+
+                                        <li data-toggle='collapse' data-percent='prent2_2' href='#prent2_2_child'>
+                                            <span class="glyphicon glyphicon-member "></span>二号
+                                        </li>
+                                        <ul class='collapse' id='prent2_2_child'>
+                                            <li data-toggle='collapse' data-percent='prent2_2_child' href='#prent2_2_1_child'>二号-->1</li>
+                                            <ul class='collapse' id='prent2_2_1_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>二号-->2_1_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>二号-->2_1_2</li>
+                                            </ul>
+                                            <li data-toggle='collapse' data-percent='prent2_2_child' href='#prent2_2_2_child'><span class="glyphicon glyphicon-member "></span>二号-->2</li>
+                                            <ul class='collapse' id='prent2_2_2_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>二号-->2_2_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>二号-->2_2_2</li>
+                                            </ul>
+                                            <li data-toggle='collapse' data-percent='prent2_2_child' href='#prent2_2_3_child'><span class="glyphicon glyphicon-member "></span>二号-->3</li>
+                                            <ul class='collapse' id='prent2_2_3_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>二号-->2_3_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>二号-->2_3_2</li>
+                                            </ul>
+                                        </ul>
+
+                                        <li data-toggle='collapse' data-percent='prent2_3' href='#prent2_3_child'>
+                                            <span class="glyphicon glyphicon-member "></span>三号
+                                        </li>
+                                        <ul class='collapse' id='prent2_3_child'>
+                                            <li data-toggle='collapse' data-percent='prent2_3_child' href='#prent2_3_1_child'><span class="glyphicon glyphicon-member "></span>三号-->1</li>
+                                            <ul class='collapse' id='prent2_3_1_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>三号-->3_1_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>三号-->3_1_2</li>
+                                            </ul>
+                                            <li data-toggle='collapse' data-percent='prent2_3_child' href='#prent2_3_2_child'><span class="glyphicon glyphicon-member "></span>三号-->2</li>
+                                            <ul class='collapse' id='prent2_3_2_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>三号-->3_2_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>三号-->3_2_2</li>
+                                            </ul>
+                                            <li data-toggle='collapse' data-percent='prent2_3_child' href='#prent2_3_3_child'><span class="glyphicon glyphicon-member "></span>三号-->3</li>
+                                            <ul class='collapse' id='prent2_3_3_child'>
+                                                <li><span class="glyphicon glyphicon-member "></span>三号-->3_3_1</li>
+                                                <li><span class="glyphicon glyphicon-member "></span>三号-->3_3_2</li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo">
+                                第 2 部分
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseThree">
+                                第 3 部分
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <table class="table">
+
+            </table>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"/>
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+<script>
+    /*datatables配置*/
+    $(document).ready(function () {
+        var dt = [
+            {
+                "id":       "Tiger Nixon",
+                "name":   "System Architect",
+                "permission":     "$3,120",
+            },
+            {
+                "id":       "Garrett Winters",
+                "name":   "Director",
+                "permission":     "$5,300",
+            }
+        ];
+
+        $('.table').DataTable({
+            "processing": true,//加载显示提示
+            data:dt,
+            "columns": [
+                { "data": "id"},
+                { "data": "name"},
+                { "data": "permission"},
+                {
+                    "data": null,
+                    render: function (data, type, row, meta) {
+                        return "空";
+                    }
+                }
+            ],
+            language: {
+                url: '/datatables/Chinese.json'
+            },
+            colReorder: true
+        });
+
+    });
+</script>
+</body>
+</html>

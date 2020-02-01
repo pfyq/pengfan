@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qp.smark.dao.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.qp.smark.entity.Users">
+    <!--@mbg.generated-->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+    <result column="LEVEL" jdbcType="INTEGER" property="level" />
+    <result column="REAL_NAME" jdbcType="VARCHAR" property="realName" />
+    <result column="PROVINCE_ID" jdbcType="INTEGER" property="provinceId" />
+    <result column="CITY_ID" jdbcType="INTEGER" property="cityId" />
+    <result column="PHONE" jdbcType="VARCHAR" property="phone" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="QQ" jdbcType="VARCHAR" property="qq" />
+    <result column="BLOG" jdbcType="VARCHAR" property="blog" />
+    <result column="SCHOOL_ID" jdbcType="INTEGER" property="schoolId" />
+    <result column="GRADE_NAME" jdbcType="VARCHAR" property="gradeName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ID, `NAME`, `PASSWORD`, `LEVEL`, REAL_NAME, PROVINCE_ID, CITY_ID, PHONE, EMAIL, QQ, 
+    BLOG, SCHOOL_ID, GRADE_NAME
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from users
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from users
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="ID" keyProperty="id" parameterType="com.qp.smark.entity.Users" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into users (`NAME`, `PASSWORD`, `LEVEL`, 
+      REAL_NAME, PROVINCE_ID, CITY_ID, 
+      PHONE, EMAIL, QQ, BLOG, 
+      SCHOOL_ID, GRADE_NAME)
+    values (#{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{level,jdbcType=INTEGER}, 
+      #{realName,jdbcType=VARCHAR}, #{provinceId,jdbcType=INTEGER}, #{cityId,jdbcType=INTEGER}, 
+      #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR}, #{blog,jdbcType=VARCHAR}, 
+      #{schoolId,jdbcType=INTEGER}, #{gradeName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="ID" keyProperty="id" parameterType="com.qp.smark.entity.Users" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        `NAME`,
+      </if>
+      <if test="password != null">
+        `PASSWORD`,
+      </if>
+      <if test="level != null">
+        `LEVEL`,
+      </if>
+      <if test="realName != null">
+        REAL_NAME,
+      </if>
+      <if test="provinceId != null">
+        PROVINCE_ID,
+      </if>
+      <if test="cityId != null">
+        CITY_ID,
+      </if>
+      <if test="phone != null">
+        PHONE,
+      </if>
+      <if test="email != null">
+        EMAIL,
+      </if>
+      <if test="qq != null">
+        QQ,
+      </if>
+      <if test="blog != null">
+        BLOG,
+      </if>
+      <if test="schoolId != null">
+        SCHOOL_ID,
+      </if>
+      <if test="gradeName != null">
+        GRADE_NAME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="level != null">
+        #{level,jdbcType=INTEGER},
+      </if>
+      <if test="realName != null">
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="provinceId != null">
+        #{provinceId,jdbcType=INTEGER},
+      </if>
+      <if test="cityId != null">
+        #{cityId,jdbcType=INTEGER},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null">
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="blog != null">
+        #{blog,jdbcType=VARCHAR},
+      </if>
+      <if test="schoolId != null">
+        #{schoolId,jdbcType=INTEGER},
+      </if>
+      <if test="gradeName != null">
+        #{gradeName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qp.smark.entity.Users">
+    <!--@mbg.generated-->
+    update users
+    <set>
+      <if test="name != null">
+        `NAME` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        `PASSWORD` = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="level != null">
+        `LEVEL` = #{level,jdbcType=INTEGER},
+      </if>
+      <if test="realName != null">
+        REAL_NAME = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="provinceId != null">
+        PROVINCE_ID = #{provinceId,jdbcType=INTEGER},
+      </if>
+      <if test="cityId != null">
+        CITY_ID = #{cityId,jdbcType=INTEGER},
+      </if>
+      <if test="phone != null">
+        PHONE = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        EMAIL = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null">
+        QQ = #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="blog != null">
+        BLOG = #{blog,jdbcType=VARCHAR},
+      </if>
+      <if test="schoolId != null">
+        SCHOOL_ID = #{schoolId,jdbcType=INTEGER},
+      </if>
+      <if test="gradeName != null">
+        GRADE_NAME = #{gradeName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qp.smark.entity.Users">
+    <!--@mbg.generated-->
+    update users
+    set `NAME` = #{name,jdbcType=VARCHAR},
+      `PASSWORD` = #{password,jdbcType=VARCHAR},
+      `LEVEL` = #{level,jdbcType=INTEGER},
+      REAL_NAME = #{realName,jdbcType=VARCHAR},
+      PROVINCE_ID = #{provinceId,jdbcType=INTEGER},
+      CITY_ID = #{cityId,jdbcType=INTEGER},
+      PHONE = #{phone,jdbcType=VARCHAR},
+      EMAIL = #{email,jdbcType=VARCHAR},
+      QQ = #{qq,jdbcType=VARCHAR},
+      BLOG = #{blog,jdbcType=VARCHAR},
+      SCHOOL_ID = #{schoolId,jdbcType=INTEGER},
+      GRADE_NAME = #{gradeName,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

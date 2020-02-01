@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  
+  <settings>
+	<!--<setting name="autoMappingBehavior" value="FULL"/>--><!--用了后再一对多中若多没有数据会将一的相同字段赋值给多  有问题-->
+	<setting name="logImpl" value="LOG4J"></setting>  
+  </settings>
+   
+  <!-- <typeAliases>
+     <package name="com.peng.entity"/>
+  </typeAliases> -->
+  <!--  
+    <plugins>
+     
+     <plugin interceptor="com.lxd.cpic.interceptor.MyInterceptor" />
+	</plugins>-->
+  <!--<mappers>-->
+    <!--<mapper resource="com/lxd/khxt/dao/SchoolDao.xml"/>-->
+  <!--</mappers>-->
+  
+ 
+</configuration>

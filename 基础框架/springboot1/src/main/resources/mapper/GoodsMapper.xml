@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qp.smark.dao.GoodsMapper">
+  <resultMap id="BaseResultMap" type="com.qp.smark.entity.Goods">
+    <!--@mbg.generated-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="poster_url" jdbcType="VARCHAR" property="posterUrl" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="ass_title" jdbcType="VARCHAR" property="assTitle" />
+    <result column="type_id" jdbcType="INTEGER" property="typeId" />
+    <result column="end_date" jdbcType="TIMESTAMP" property="endDate" />
+    <result column="head_url" jdbcType="VARCHAR" property="headUrl" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="special_price" jdbcType="DECIMAL" property="specialPrice" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="create_date" />
+    <result column="limitation" jdbcType="TIMESTAMP" property="limitation" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, url, poster_url, title, remark, ass_title, type_id, end_date, head_url, content, 
+    price, special_price,create_date,limitation
+  </sql>
+
+
+  <select id="all" parameterType="map" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM `goods`
+    where 1=1
+    <if test="gid != null">
+      and `goods`.id = #{gid,jdbcType=VARCHAR}
+    </if>
+
+    ORDER BY create_date DESC
+
+    LIMIT #{startRow},#{rows}
+  </select>
+
+  <select id="count" parameterType="map" resultType="long">
+    SELECT count(0) FROM `goods`
+    where 1=1
+
+    <if test="gid != null">
+      and `goods`.id = #{gid,jdbcType=VARCHAR}
+    </if>
+
+  </select>
+
+
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from goods
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from goods
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.qp.smark.entity.Goods" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into goods (url, poster_url, title, 
+      remark, ass_title, type_id, 
+      end_date, head_url, content, 
+      price, special_price,create_date,`limitation`)
+    values (#{url,jdbcType=VARCHAR}, #{posterUrl,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{assTitle,jdbcType=VARCHAR}, #{typeId,jdbcType=INTEGER}, 
+      #{endDate,jdbcType=TIMESTAMP}, #{headUrl,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR}, 
+      #{price,jdbcType=DECIMAL}, #{specialPrice,jdbcType=DECIMAL},NOW(),#{limitation,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.qp.smark.entity.Goods" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into goods
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="url != null">
+        url,
+      </if>
+      <if test="posterUrl != null">
+        poster_url,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="assTitle != null">
+        ass_title,
+      </if>
+      <if test="typeId != null">
+        type_id,
+      </if>
+      <if test="endDate != null">
+        end_date,
+      </if>
+      <if test="headUrl != null">
+        head_url,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="specialPrice != null">
+        special_price,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="posterUrl != null">
+        #{posterUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="assTitle != null">
+        #{assTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="typeId != null">
+        #{typeId,jdbcType=INTEGER},
+      </if>
+      <if test="endDate != null">
+        #{endDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="headUrl != null">
+        #{headUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="specialPrice != null">
+        #{specialPrice,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qp.smark.entity.Goods">
+    <!--@mbg.generated-->
+    update goods
+    <set>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="posterUrl != null">
+        poster_url = #{posterUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="assTitle != null">
+        ass_title = #{assTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="typeId != null">
+        type_id = #{typeId,jdbcType=INTEGER},
+      </if>
+      <if test="endDate != null">
+        end_date = #{endDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="headUrl != null">
+        head_url = #{headUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="specialPrice != null">
+        special_price = #{specialPrice,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qp.smark.entity.Goods">
+    <!--@mbg.generated-->
+    update goods
+    set url = #{url,jdbcType=VARCHAR},
+      poster_url = #{posterUrl,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      ass_title = #{assTitle,jdbcType=VARCHAR},
+      type_id = #{typeId,jdbcType=INTEGER},
+      end_date = #{endDate,jdbcType=TIMESTAMP},
+      head_url = #{headUrl,jdbcType=VARCHAR},
+      content = #{content,jdbcType=LONGVARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      special_price = #{specialPrice,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
