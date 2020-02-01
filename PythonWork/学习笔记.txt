@@ -1,0 +1,1 @@
+若下载相应的依赖需进入如下文件夹-->F:\Python\Python36\Scripts-->cmd-->执行下载命令
