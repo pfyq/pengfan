@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weCloudCore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weCloudCore/kitty-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weCloudCore/kitty-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weCloudCore/weCloudCoreClient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weCloudCore/weCloudCoreServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weCloudDependencies" charset="UTF-8" />
+  </component>
+</project>
