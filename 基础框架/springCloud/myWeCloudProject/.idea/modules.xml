@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/cloudNacosConfig/cloudNacosConfig.iml" filepath="$PROJECT_DIR$/weCloudCore/cloudNacosConfig/cloudNacosConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/coreHystrix/coreHystrix.iml" filepath="$PROJECT_DIR$/weCloudCore/coreHystrix/coreHystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/coreZuul/coreZuul.iml" filepath="$PROJECT_DIR$/weCloudCore/coreZuul/coreZuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/myWeCloudProject.iml" filepath="$PROJECT_DIR$/myWeCloudProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCore.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreAdmin/weCloudCoreAdmin.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreAdmin/weCloudCoreAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreBackUp/weCloudCoreBackUp.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreBackUp/weCloudCoreBackUp.iml" />
       <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreClient/weCloudCoreClient.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreClient/weCloudCoreClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreCommon/weCloudCoreCommon.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreCommon/weCloudCoreCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreConfig/weCloudCoreConfig.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreConfig/weCloudCoreConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreConfigClient/weCloudCoreConfigClient.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreConfigClient/weCloudCoreConfigClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreCore/weCloudCoreCore.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreCore/weCloudCoreCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreMonitor/weCloudCoreMonitor.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreMonitor/weCloudCoreMonitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreServer/weCloudCoreServer.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreServer/weCloudCoreServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weCloudCore/weCloudCoreServer2/weCloudCoreServer2.iml" filepath="$PROJECT_DIR$/weCloudCore/weCloudCoreServer2/weCloudCoreServer2.iml" />
       <module fileurl="file://$PROJECT_DIR$/weCloudDependencies/weCloudDependencies.iml" filepath="$PROJECT_DIR$/weCloudDependencies/weCloudDependencies.iml" />
     </modules>
   </component>

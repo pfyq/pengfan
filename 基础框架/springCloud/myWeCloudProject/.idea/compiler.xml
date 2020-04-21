@@ -6,21 +6,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloudNacosConfig" />
+        <module name="coreHystrix" />
+        <module name="coreZuul" />
         <module name="myWeCloudProject" />
         <module name="weCloudCore" />
+        <module name="weCloudCoreAdmin" />
+        <module name="weCloudCoreBackUp" />
         <module name="weCloudCoreClient" />
+        <module name="weCloudCoreCommon" />
+        <module name="weCloudCoreConfig" />
+        <module name="weCloudCoreConfigClient" />
+        <module name="weCloudCoreCore" />
+        <module name="weCloudCoreMonitor" />
         <module name="weCloudCoreServer" />
+        <module name="weCloudCoreServer2" />
         <module name="weCloudDependencies" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="kitty-consumer" target="1.5" />
-      <module name="kitty-producer" target="1.5" />
-      <module name="myWeCloudProject" target="1.5" />
-      <module name="weCloudCore" target="1.5" />
-      <module name="weCloudCoreClient" target="6" />
-      <module name="weCloudCoreServer" target="1.5" />
-      <module name="weCloudDependencies" target="1.5" />
+      <module name="cloudNacosConfig" target="1.8" />
+      <module name="coreHystrix" target="1.8" />
+      <module name="coreZuul" target="1.8" />
+      <module name="myWeCloudProject" target="8" />
+      <module name="weCloudCore" target="1.8" />
+      <module name="weCloudCoreAdmin" target="1.8" />
+      <module name="weCloudCoreBackUp" target="1.8" />
+      <module name="weCloudCoreClient" target="1.8" />
+      <module name="weCloudCoreCommon" target="1.8" />
+      <module name="weCloudCoreConfig" target="1.8" />
+      <module name="weCloudCoreConfigClient" target="1.8" />
+      <module name="weCloudCoreCore" target="1.8" />
+      <module name="weCloudCoreMonitor" target="1.8" />
+      <module name="weCloudCoreServer" target="1.8" />
+      <module name="weCloudCoreServer2" target="1.8" />
+      <module name="weCloudDependencies" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

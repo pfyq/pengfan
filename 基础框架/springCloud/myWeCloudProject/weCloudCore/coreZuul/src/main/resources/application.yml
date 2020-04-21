@@ -1,0 +1,27 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /
+    session:
+      timeout: 60s
+  tomcat:
+    max-threads: 100
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: nacos-zuul
+  cloud:
+    nacos:
+      host: localhost
+      port: 8500
+      discovery:
+        service: ${spring.application.name} # 注册到nacos的服务名称
+        server-addr: 127.0.0.1:8848	# nacos ip
+zuul:
+  routes:
+    ribbon:
+      path: /ribbon/**
+      serviceId: nacos-discovery-client  # 转发到消费者 /ribbon/ 为前缀
+    feign:
+      path: /feign/**
+      serviceId: nacos-discovery-client  # 转发到消费者 /feign/  为前缀

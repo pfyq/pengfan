@@ -1,5 +1,6 @@
 package com.pf.core.client.wecloudcoreclient;
 
+import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import com.pf.core.client.wecloudcoreclient.feign.FeignClientService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
+//@EnableDiscoveryClient
 @RestController
 @EnableFeignClients
 public class WecloudcoreclientApplication {
@@ -36,13 +39,14 @@ public class WecloudcoreclientApplication {
     // 此配置是为了服务监控而配置，与服务容错本身无关，
     // ServletRegistrationBean因为springboot的默认路径不是"/hystrix.stream"，
     // 只要在自己的项目里配置上下面的servlet就可以了
-//    @Bean
-//    public ServletRegistrationBean getServlet() {
-//        HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
-//        ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
-//        registrationBean.setLoadOnStartup(1);
-//        registrationBean.addUrlMappings("/hystrix.stream");
-//        registrationBean.setName("HystrixMetricsStreamServlet");
-//        return registrationBean;
-//    }
+    @Bean
+    public ServletRegistrationBean getServlet() {
+        HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
+        ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
+        registrationBean.setLoadOnStartup(1);
+        //服务监控路径配置   对Hystrix进行实时监控
+        registrationBean.addUrlMappings("/hystrix.stream");
+        registrationBean.setName("HystrixMetricsStreamServlet");
+        return registrationBean;
+    }
 }

@@ -16,7 +16,17 @@
 
     <modules>
         <module>weCloudCoreServer</module>
+        <module>weCloudCoreServer2</module>
         <module>weCloudCoreClient</module>
+        <module>weCloudCoreBackUp</module>
+        <module>weCloudCoreConfig</module>
+        <module>weCloudCoreConfigClient</module>
+        <module>weCloudCoreMonitor</module>
+        <module>coreZuul</module>
+        <module>coreHystrix</module>
+        <module>weCloudCoreCommon</module>
+        <module>weCloudCoreCore</module>
+        <module>weCloudCoreAdmin</module>
     </modules>
 
     <dependencies>
@@ -38,13 +48,4 @@
         </dependency>
     </dependencies>
 
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

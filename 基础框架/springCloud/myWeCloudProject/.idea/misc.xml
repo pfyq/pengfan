@@ -8,6 +8,17 @@
         <option value="$PROJECT_DIR$/weCloudCore/pom.xml" />
         <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreServer/pom.xml" />
         <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreClient/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreBackUp/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreConfigClient/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreMonitor/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/coreZuul/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/coreHystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/cloudNacosConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreServer2/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreCommon/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreCore/pom.xml" />
+        <option value="$PROJECT_DIR$/weCloudCore/weCloudCoreAdmin/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
