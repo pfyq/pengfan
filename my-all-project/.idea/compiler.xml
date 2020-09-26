@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="my-mi-demo" />
+        <module name="my-excel-handle" />
+        <module name="my-mi-server" />
+        <module name="my-elasticsearch-one" />
+        <module name="my-mi-forward-route" />
+        <module name="my-mi-proto-test" />
+        <module name="my-mi-rout-api" />
+        <module name="my-pdf-handle" />
+        <module name="my-mi-common" />
+        <module name="my-importbean" />
+        <module name="my-mi-server-api" />
+        <module name="my-mi-client" />
+        <module name="my-unit-test" />
+        <module name="my-all-project" />
+        <module name="my-spi-text" />
+        <module name="my-spi-factorybean" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="all-dependencies" target="1.8" />
+      <module name="my-all-project" target="1.5" />
+      <module name="my-elasticsearch-one" target="1.8" />
+      <module name="my-excel-handle" target="1.8" />
+      <module name="my-importbean" target="1.8" />
+      <module name="my-mi-client" target="1.8" />
+      <module name="my-mi-common" target="1.8" />
+      <module name="my-mi-demo" target="1.8" />
+      <module name="my-mi-forward-route" target="1.8" />
+      <module name="my-mi-proto-test" target="1.8" />
+      <module name="my-mi-rout-api" target="1.8" />
+      <module name="my-mi-server" target="1.8" />
+      <module name="my-mi-server-api" target="1.8" />
+      <module name="my-pdf-handle" target="1.8" />
+      <module name="my-spi-factorybean" target="1.8" />
+      <module name="my-spi-text" target="1.8" />
+      <module name="my-unit-test" target="1.8" />
+      <module name="myElasticSearch" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="my-excel-handle" options="-parameters" />
+      <module name="my-importbean" options="-parameters" />
+      <module name="my-pdf-handle" options="-parameters" />
+      <module name="my-spi-factorybean" options="-parameters" />
+      <module name="my-spi-text" options="-parameters" />
+      <module name="my-unit-test" options="-parameters" />
+    </option>
+  </component>
+</project>

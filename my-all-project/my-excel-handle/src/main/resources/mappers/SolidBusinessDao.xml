@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pf.excel.readExcel.dao.SolidBusinessDao">
+  <resultMap id="BaseResultMap" type="com.pf.excel.readExcel.entity.SolidBusiness">
+    <!--@mbg.generated-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="business_code" jdbcType="VARCHAR" property="businessCode" />
+    <result column="business_name" jdbcType="VARCHAR" property="businessName" />
+    <result column="pid" jdbcType="VARCHAR" property="pid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id,business_code,business_name,pid
+  </sql>
+
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.pf.excel.readExcel.entity.SolidBusiness" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into solid_business
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="businessCode != null">
+        business_code,
+      </if>
+      <if test="businessName != null">
+        business_name,
+      </if>
+      <if test="pid != null">
+        pid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="businessCode != null">
+        #{businessCode,jdbcType=VARCHAR},
+      </if>
+      <if test="businessName != null">
+        #{businessName,jdbcType=VARCHAR},
+      </if>
+      <if test="pid != null">
+        #{pid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

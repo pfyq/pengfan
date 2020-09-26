@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/all-dependencies" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-elasticsearch-one" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-elasticsearch-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-excel-handle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-excel-handle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-importbean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-importbean/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-forward-route" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-forward-route/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-proto-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-proto-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-rout-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-rout-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-server-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-server-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-mi-demo/my-mi-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-pdf-handle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-spi-factorybean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-spi-factorybean/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-spi-text" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-spi-text/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-unit-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-unit-test/src/main/java" charset="UTF-8" />
+  </component>
+</project>

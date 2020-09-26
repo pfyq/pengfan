@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/all-dependencies/all-dependencies.iml" filepath="$PROJECT_DIR$/all-dependencies/all-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-all-project.iml" filepath="$PROJECT_DIR$/my-all-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-elasticsearch-one/my-elasticsearch-one.iml" filepath="$PROJECT_DIR$/my-elasticsearch-one/my-elasticsearch-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-excel-handle/my-excel-handle.iml" filepath="$PROJECT_DIR$/my-excel-handle/my-excel-handle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-importbean/my-importbean.iml" filepath="$PROJECT_DIR$/my-importbean/my-importbean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-client/my-mi-client.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-client/my-mi-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-common/my-mi-common.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-common/my-mi-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-demo.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-forward-route/my-mi-forward-route.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-forward-route/my-mi-forward-route.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-proto-test/my-mi-proto-test.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-proto-test/my-mi-proto-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-rout-api/my-mi-rout-api.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-rout-api/my-mi-rout-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-server/my-mi-server.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-server/my-mi-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-mi-demo/my-mi-server-api/my-mi-server-api.iml" filepath="$PROJECT_DIR$/my-mi-demo/my-mi-server-api/my-mi-server-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-pdf-handle/my-pdf-handle.iml" filepath="$PROJECT_DIR$/my-pdf-handle/my-pdf-handle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-spi-factorybean/my-spi-factorybean.iml" filepath="$PROJECT_DIR$/my-spi-factorybean/my-spi-factorybean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-spi-text/my-spi-text.iml" filepath="$PROJECT_DIR$/my-spi-text/my-spi-text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-unit-test/my-unit-test.iml" filepath="$PROJECT_DIR$/my-unit-test/my-unit-test.iml" />
+    </modules>
+  </component>
+</project>

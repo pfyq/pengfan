@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d449a452-741e-4a0d-84e1-c14ab6fb7400" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="my-all-project" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="F:\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ekKh8Kr5KRSqrCQPWIgcZFkKwX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shiro_redis_springboot单点登录/shiro-redis-sso-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.371134" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.pf.temp.myspitext" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-pdf-handle\src\main\java" />
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-pdf-handle\src\main\resources" />
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-pdf-handle\tests" />
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-pdf-handle\src\main\java\com\pf\mypdfhandle\writePdf\util\parser" />
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-pdf-handle\src\main\java\com\pf\mypdfhandle\writePdf\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pf.mypdfhandle.writePdf" />
+      <recent name="com.pf.mypdfhandle.writePdf.docUtil" />
+      <recent name="com.pf.mypdfhandle.writePdf.htmlUtil" />
+      <recent name="com.pf.mypdfhandle.writePdf.util" />
+      <recent name="com.pf.miclient.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-pdf-handle" />
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-spi-text\src\test\resources\META-INF\services" />
+      <recent name="F:\ideaWork\springbootKuangJiaCeShi\outProject\my-all-project\my-spi-text\src\main\resources\META-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TextPDFTest.myTest">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadTest.excelTemplateRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-excel-handle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pf.excel.readExcel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pf.excel.readExcel" />
+      <option name="MAIN_CLASS_NAME" value="com.pf.excel.readExcel.ReadTest" />
+      <option name="METHOD_NAME" value="excelTemplateRead" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextPDFTest.myTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-pdf-handle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pf.mypdfhandle.writePdf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pf.mypdfhandle.writePdf" />
+      <option name="MAIN_CLASS_NAME" value="com.pf.mypdfhandle.writePdf.TextPDFTest" />
+      <option name="METHOD_NAME" value="myTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextPDFTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-pdf-handle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pf.mypdfhandle.writePdf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pf.mypdfhandle.writePdf" />
+      <option name="MAIN_CLASS_NAME" value="com.pf.mypdfhandle.writePdf.TextPDFTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WritePdfText.aa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-pdf-handle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pf.mypdfhandle.writePdf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pf.mypdfhandle.writePdf" />
+      <option name="MAIN_CLASS_NAME" value="com.pf.mypdfhandle.writePdf.WritePdfText" />
+      <option name="METHOD_NAME" value="aa" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WritePdfText.text1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-pdf-handle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pf.mypdfhandle.writePdf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pf.mypdfhandle.writePdf" />
+      <option name="MAIN_CLASS_NAME" value="com.pf.mypdfhandle.writePdf.WritePdfText" />
+      <option name="METHOD_NAME" value="text1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-importbean" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.git.hui.boot.importbean.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-excel-handle" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.excel.ExcelApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-mi-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.miclient.MiClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiProtoTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-mi-proto-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.miprototest.MiProtoTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyElasticsearchOneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-elasticsearch-one" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.myelasticsearchone.MyElasticsearchOneApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyPdfHandleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-pdf-handle" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.mypdfhandle.MyPdfHandleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySpiFactorybeanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-spi-factorybean" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.spi.myspifactorybean.MySpiFactorybeanApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySpiTextApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-spi-text" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.temp.myspitext.MySpiTextApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-unit-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pf.unit.UnitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ReadTest.excelTemplateRead" />
+      <item itemvalue="JUnit.WritePdfText.aa" />
+      <item itemvalue="JUnit.WritePdfText.text1" />
+      <item itemvalue="JUnit.TextPDFTest.test" />
+      <item itemvalue="JUnit.TextPDFTest.myTest" />
+      <item itemvalue="Spring Boot.MySpiFactorybeanApplication" />
+      <item itemvalue="Spring Boot.MySpiTextApplication" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.MyElasticsearchOneApplication" />
+      <item itemvalue="Spring Boot.ExcelApplication" />
+      <item itemvalue="Spring Boot.UnitApplication" />
+      <item itemvalue="Spring Boot.MiClientApplication" />
+      <item itemvalue="Spring Boot.MiProtoTestApplication" />
+      <item itemvalue="Spring Boot.MyPdfHandleApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TextPDFTest.myTest" />
+        <item itemvalue="JUnit.TextPDFTest.test" />
+        <item itemvalue="JUnit.WritePdfText.text1" />
+        <item itemvalue="JUnit.WritePdfText.aa" />
+        <item itemvalue="JUnit.ReadTest.excelTemplateRead" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\pengfan\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d449a452-741e-4a0d-84e1-c14ab6fb7400" name="Default" comment="" />
+      <created>1588132124787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588132124787</updated>
+      <workItem from="1588132136646" duration="320000" />
+      <workItem from="1588132722851" duration="11619000" />
+      <workItem from="1588207051569" duration="16075000" />
+      <workItem from="1588498875070" duration="1215000" />
+      <workItem from="1588542243316" duration="1803000" />
+      <workItem from="1588675765262" duration="626000" />
+      <workItem from="1588725477408" duration="2685000" />
+      <workItem from="1589100133500" duration="599000" />
+      <workItem from="1589183101238" duration="760000" />
+      <workItem from="1589880597273" duration="2064000" />
+      <workItem from="1589939298382" duration="9414000" />
+      <workItem from="1590025380720" duration="10116000" />
+      <workItem from="1590108139108" duration="4230000" />
+      <workItem from="1590194729035" duration="624000" />
+      <workItem from="1590223276581" duration="4964000" />
+      <workItem from="1590374784001" duration="13158000" />
+      <workItem from="1590454500410" duration="2605000" />
+      <workItem from="1590473150947" duration="4913000" />
+      <workItem from="1590484192373" duration="24000" />
+      <workItem from="1590561070514" duration="642000" />
+      <workItem from="1590717700152" duration="11708000" />
+      <workItem from="1590981192434" duration="14869000" />
+      <workItem from="1591058593588" duration="19474000" />
+      <workItem from="1591144837492" duration="9197000" />
+      <workItem from="1591929451760" duration="863000" />
+      <workItem from="1594860278268" duration="1201000" />
+      <workItem from="1595399900253" duration="2675000" />
+      <workItem from="1595465825611" duration="643000" />
+      <workItem from="1595552120072" duration="5000" />
+      <workItem from="1599708709834" duration="16409000" />
+      <workItem from="1599790294199" duration="960000" />
+      <workItem from="1599873514014" duration="1825000" />
+      <workItem from="1600240128326" duration="3621000" />
+      <workItem from="1600328753748" duration="7388000" />
+      <workItem from="1600393570938" duration="12858000" />
+      <workItem from="1600418480265" duration="268000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="599" y="270" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1600398375528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="270" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1536.824@0.0.1536.824" timestamp="1600398375528" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1599709604800">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599709604800" />
+    <state width="750" height="438" key="DebuggerActiveHint" timestamp="1600399508342">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="750" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1600399508342" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1600417789179">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600417789179" />
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1600418218656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600418218656" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1600418218656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600418218656" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1600418218656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600418218656" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1600418218656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600418218656" />
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1600418218650">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600418218650" />
+    <state width="1493" height="263" key="GridCell.Tab.1.center" timestamp="1600418218649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600418218649" />
+    <state width="1493" height="263" key="GridCell.Tab.1.left" timestamp="1600418218649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600418218649" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right" timestamp="1600418218649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600418218649" />
+    <state x="299" y="70" key="Maven.ArtifactSearchDialog" timestamp="1599721162716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1599721162716" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1595465825653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1595465825652" />
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1600393950779">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600393950779" />
+    <state x="327" y="34" key="new project wizard" timestamp="1600240307372">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="327" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1600240307372" />
+    <state x="511" y="45" key="refactoring.ChangeSignatureDialog" timestamp="1600407309281">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="45" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1600407309281" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1600416087860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600416087860" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600409438100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600409438100" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/my-unit-test/src/main/java/com/pf/unit/forkJoinPoolDemo/MyRecursiveTask.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/my-pdf-handle/src/main/java/com/pf/mypdfhandle/writePdf/util/handler/PDFDoc.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/my-pdf-handle/src/main/java/com/pf/mypdfhandle/writePdf/util/parser/TextParser.java</url>
+          <line>260</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/my-pdf-handle/src/main/java/com/pf/mypdfhandle/writePdf/util/entity/TextDoc.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>my-spi-text:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.371134" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.371134" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.371134" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 28, Q preview Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.371134" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>my-mi-proto-test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.371134" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.371134" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

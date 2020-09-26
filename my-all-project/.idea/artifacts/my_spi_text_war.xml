@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="my-spi-text:war">
+    <output-path>$PROJECT_DIR$/my-spi-text/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>my-spi-text</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="my-spi-text-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="my-spi-text:war exploded" />
+    </root>
+  </artifact>
+</component>

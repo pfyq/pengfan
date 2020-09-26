@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/my-spi-text" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/all-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/my-spi-factorybean/pom.xml" />
+        <option value="$PROJECT_DIR$/my-spi-text/pom.xml" />
+        <option value="$PROJECT_DIR$/my-elasticsearch-one/pom.xml" />
+        <option value="$PROJECT_DIR$/my-excel-handle/pom.xml" />
+        <option value="$PROJECT_DIR$/my-unit-test/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-common/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-server/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-server-api/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-rout-api/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-client/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-forward-route/pom.xml" />
+        <option value="$PROJECT_DIR$/my-mi-demo/my-mi-proto-test/pom.xml" />
+        <option value="$PROJECT_DIR$/my-pdf-handle/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
