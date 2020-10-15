@@ -15,3 +15,22 @@ git add xx命令可以将xx文件添加到暂存区，如果有很多改动可�
 git commit -m "提交注释"
 
 git push origin  分支名称，一般使用：git push origin master
+
+
+
+
+
+
+
+# 1.初始化
+mkdir localdir # 创建用于作为本地仓库的文件夹
+cd localdir # 进入文件夹
+git init # 在本地指定文件夹内执行此命令设置为git仓库
+# 2. 拉取remote all objects信息
+git remote add -f origin https://gitee.com/fan_peng/my-project.git # 添加远程仓库地址，实现拉取remote的all objects信息
+# 3. 开启sparse clone
+git config core.sparsecheckout true # 用于控制是否允许设置pull指定文件/夹，适用于Git1.7.0以后版本，本质是开启sparse clone
+echo "fileName" >> .git/info/sparse-checkout # 本地目录的.git文件夹下，如果没有sparse-checkout文件则创建，在其中添加指定的文件/夹fileName，就是需要拉取的那个特定文件/夹。*表示所有，！表示匹配相反
+cat .git/info/sparse-chechout # 查看
+# 4. 拉取指定目录
+git pull origin master # 拉取命令是一样的，只是已经通过配置文件sparse-chechout指定了目标文件/夹
