@@ -21,7 +21,7 @@
         <java.version>1.8</java.version>
         <commons.lang.version>2.6</commons.lang.version>
         <commons-lang3.version>3.5</commons-lang3.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <groovy-all.version>2.4.5</groovy-all.version>
         <fastjson.version>1.2.56</fastjson.version>
         <javaLib.version>1.0.7.RELEASE</javaLib.version>
