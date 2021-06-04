@@ -25,7 +25,7 @@
         <groovy-all.version>2.4.5</groovy-all.version>
         <fastjson.version>1.2.56</fastjson.version>
         <javaLib.version>1.0.7.RELEASE</javaLib.version>
-        <httpclient.version>4.5.7</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <jsoup.version>1.10.2</jsoup.version>
         <easyexcel.version>2.1.2</easyexcel.version>
         <guava.version>23.6-jre</guava.version>
