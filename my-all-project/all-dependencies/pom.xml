@@ -23,7 +23,7 @@
         <commons-lang3.version>3.5</commons-lang3.version>
         <commons-io.version>2.6</commons-io.version>
         <groovy-all.version>2.4.5</groovy-all.version>
-        <fastjson.version>1.2.56</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <javaLib.version>1.0.7.RELEASE</javaLib.version>
         <httpclient.version>4.5.7</httpclient.version>
         <jsoup.version>1.10.2</jsoup.version>
