@@ -33,7 +33,7 @@
         <mybatis.version>2.0.0</mybatis.version>
         <druid.version>1.1.10</druid.version>
         <commons-beanutils.version>1.9.1</commons-beanutils.version>
-        <itextpdf.version>5.5.10</itextpdf.version>
+        <itextpdf.version>5.5.12</itextpdf.version>
         <itext-asian.version>5.2.0</itext-asian.version>
         <json-simple.version>1.1.1</json-simple.version>
     </properties>
